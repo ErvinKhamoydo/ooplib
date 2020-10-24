@@ -2079,6 +2079,12 @@ function () {
       recursy(body);
     }
   }, {
+    key: "onColorChange",
+    value: function onColorChange(e) {
+      var body = document.querySelector('body');
+      body.style.backgroundColor = e.target.value;
+    }
+  }, {
     key: "render",
     value: function render() {
       var scaleInputSmall = document.createElement('input');

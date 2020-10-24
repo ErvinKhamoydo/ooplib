@@ -38,6 +38,11 @@ export default class Customizator {
         recursy(body);
     }
 
+    onColorChange(e) {
+        const body = document.querySelector('body');
+        body.style.backgroundColor = e.target.value;
+    }
+
     render() {
         let scaleInputSmall = document.createElement('input');
         let scaleInputMedium = document.createElement('input');
